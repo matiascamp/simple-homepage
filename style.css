@@ -116,10 +116,17 @@ main {
   margin-top: 7%;
 }
 
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .link-card {
   padding: 1rem;
   transition: all ease-in-out 50ms;
   cursor: pointer;
+  padding: 0 0 0.125rem 0;
 }
 
 .link-card:nth-child(0n+1),
@@ -192,9 +199,10 @@ body.dark-mode {
   color: #ffffff;
 }
 
-body.dark-mode .link-card:nth-child(0n+1) .link-title,
+body.dark-mode .link-card:nth-child(0n+1),
 body.dark-mode .buttons-container a {
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 @media screen and (min-width: 641px) {

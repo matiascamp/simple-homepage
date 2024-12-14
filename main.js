@@ -10,8 +10,6 @@ const toggleDarkMode = (toggleElement) => {
   const isChecked = toggleElement.checked
   
   document.body.classList.toggle("dark-mode", isChecked);
-  console.log("toggle checkec", isChecked);
-  console.log("  moon.style.filter",  moon);
 
   for (let i = 0; i < moon.length; i++) {
     moon[i].style.filter = isChecked ? "brightness(1) invert(0)" : "brightness(0) invert(1)"
@@ -58,8 +56,6 @@ function handleScreenChange(e) {
   }
 }
 
-// Escucha los cambios en el tamaño de la pantalla
 mediaQuery.addEventListener("change", handleScreenChange);
 
-// Llama a la función una vez al cargar la página
 handleScreenChange(mediaQuery);
