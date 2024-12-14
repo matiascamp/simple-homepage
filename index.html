@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Responsive Web Developer Starter - devchallenges.io</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-container">
+      <img id="logo" src="./assets/alarado-icon-homepage.svg" alt="Main Logo">
+      <div class="links-container">
+        <a class="link-card" href="#" target="_blank">About us</a>
+        <a class="link-card" href="#" target="_blank">Product</a>
+        <a class="link-card" href="#" target="_blank">Resource</a>
+        <a class="link-card" href="#" target="_blank">Contact</a>
+      </div>
+      <div class="controls-container">
+        <div class="toggle-container">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" class="toggle-label">
+            <img src="./assets/Moon_fill.svg" alt="Moon Icon" class="moon">
+            <img src="./assets/Sun_fill.svg" alt="Sun Icon" class="sun">
+          </label>
+        </div>
+        <div class="menu-toggle-container">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-toggle-label">
+            <img src="./assets/hamburger-button.svg" alt="Menu Icon">
+          </label>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="left-column">
+      <h4>😎 Simple way to communicate</h4>
+      <h1>Actions for Accessibility in Design</h1>
+      <h3>The fastest way to build and deploy websites with reusable components.</h3>
+      <div class="buttons-container">
+        <button>GET STARTED</button>
+        <a href="#">Get live demo</a>
+      </div>
+      <div class="features-container">
+        <div class="feature">
+          <img src="./assets/Done_ring_round_fill.svg" alt="Check Icon">
+          <p>No credit card required</p>
+        </div>
+        <div class="feature">
+          <img src="./assets/Done_ring_round_fill.svg" alt="Check Icon">
+          <p>No software to install</p>
+        </div>
+      </div>
+    </section>
+    <section class="right-column">
+      <img src="./assets/hero-image-simple-homepage.png" alt="Hero Image">
+    </section>
+  </main>
+
+  <aside>
+    <div class="header-accordion">
+      <input type="checkbox" id="accordion-toggle" />
+      <label for="accordion-toggle" class="accordion-label">
+        <img src="./assets/close-button.svg" alt="Close Button" id="mobile-close-button">
+      </label>
+    </div>
+    <nav class="mobile-links-container">
+      <a class="link-card" href="#" target="_blank">About us</a>
+      <a class="link-card" href="#" target="_blank">Product</a>
+      <a class="link-card" href="#" target="_blank">Resource</a>
+      <a class="link-card" href="#" target="_blank">Contact</a>
+      <div class="toggle-container">
+        <input type="checkbox" id="dark-mode-toggle-mobile" />
+        <label for="dark-mode-toggle-mobile" class="toggle-label">
+          <img src="./assets/Moon_fill.svg" alt="Moon Icon" class="moon">
+          <img src="./assets/Sun_fill.svg" alt="Sun Icon" class="sun">
+        </label>        
+      </div>
+    </nav>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+</html>
